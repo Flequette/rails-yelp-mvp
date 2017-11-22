@@ -1,18 +1,87 @@
+p {
+  font-size: 16px;
+}
+
+h1 {
+  text-align: center
+}
+
+h3 {
+  font-size: 22px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+.home {
+  background-image: url('resto.jpeg');
+}
+
+.banner {
+  background-color: white;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
 
 .container {
-width: 1000px;
+  width: 1000px;
+  margin: 0 auto;
 }
 
-.restaurant {
-  background-color: white;
-  padding: 20px;
-  margin: 20px auto;
-  min-height: 200px;
+.card {
   position: relative;
+  background-color: white;
+  opacity: 0.9;
+  padding: 15px;
+  margin: 10px auto;
+  min-height: 250px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2) ;
+  border-radius: 3px;
 }
 
-.detail {
+.card-show {
+  background-color: white;
+  padding: 15px;
+  margin: 15px auto;
+  min-height: 150px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2) ;
+  border-radius: 3px;
+}
+
+.card-detail {
   position: absolute;
   bottom: 10px;
   right: 10px;
+  font-size: 14px;
+}
+
+.title {
+  text-align: center;
+}
+
+.btn-primary {
+  border-radius: 3px;
+  text-align: center;
+
+}
+
+@media (max-width: 960px) {
+   .container, .card {
+    width: 700px;
+    margin: 15px auto;
+  }
+}
+@media (max-width: 720px) {
+  .container, .card {
+    width: 500px;
+    margin: 15px auto;
+  }
+}
+@media (max-width: 540px) {
+  .container, .card {
+    width: 300px;
+    margin: 15px auto;
+  }
 }
